@@ -151,12 +151,9 @@ body * {
 
 /*навигации*/
 
-.header-nav,
-.section2Nav,
-.styleInterior_ul {
+.header-nav {
   list-style-type: none;
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -175,6 +172,7 @@ body * {
 }
 .section2Nav {
   display: flex;
+  list-style-type: none;
   justify-content: flex-end;
   padding: 102px 0 45px 0;
   margin: 0;
@@ -192,7 +190,24 @@ body * {
   padding-bottom: 10px;
   border-bottom: 1px solid #e3b873;
 }
+.repair_ul {
+  list-style-position: inside;
+  padding-left: 31px;
+}
 
+.repair_li {
+  font: normal 13px/27px "Nunito Sans", arial, sans-serif;
+  color: #959595;
+}
+
+.styleInterior_ul {
+  list-style-type: none;
+  margin-top: 47px;
+  padding: 0;
+}
+.styleInterior_li {
+  margin-bottom: 10px;
+}
 .styleInterior_li a {
   font: normal 20px/38px "Nunito Sans", arial, sans-serif;
   text-decoration: none;
@@ -279,7 +294,7 @@ body * {
   line-height: 21px;
 }
 
-.section3_paragraph {
+.section3paragraph {
   font: normal 18px/37px "Nunito Sans", arial, sans-serif;
   text-align: center;
   color: #363636;
@@ -287,7 +302,21 @@ body * {
   margin: 30px auto;
   margin-bottom: 91px;
 }
+.section7paragraph {
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #363636;
+  margin: 0 0 80px 0;
+}
 
+.sectionfoto {
+  font-size: 13px;
+  line-height: 180%;
+  /* or 23px */
+  color: #959595;
+  margin: 20px auto 40px;
+}
 /*картинки и иконки*/
 
 .icon {
@@ -313,10 +342,12 @@ body * {
   background-color: #e3b873;
   margin: 12px 3px;
 }
+
 .slader {
   padding-top: 45px;
   cursor: pointer;
 }
+
 .slader_img {
   margin-right: 30px;
 }
@@ -385,6 +416,7 @@ body * {
 .section5 {
   background-image: url(..//images/dom.png);
   background-repeat: no-repeat;
+  padding-bottom: 230px;
 }
 .section6 {
   height: 864px;
@@ -405,7 +437,8 @@ body * {
   margin-bottom: 100px;
 }
 
-.Conteiner4 {
+.Conteiner4,
+.styleInterior {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -417,7 +450,12 @@ body * {
   justify-content: space-evenly;
   margin-top: 127px;
 }
-
+.conteinerStyle,
+.section2_content,
+.comment {
+  display: flex;
+  justify-content: space-between;
+}
 /*затемнение картинки*/
 
 .Conteiner1,
@@ -451,6 +489,10 @@ body * {
   height: 864px;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+.section7 {
+  padding-top: 110px;
+}
 /*контент*/
 
 .headerContent {
@@ -460,11 +502,6 @@ body * {
   justify-content: space-between;
   align-items: center;
   height: 83px;
-}
-
-.section2_content {
-  display: flex;
-  justify-content: space-between;
 }
 
 .section2_content_block1 {
@@ -510,31 +547,63 @@ body * {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
-.repair_ul {
-  list-style-position: inside;
-  padding-left: 31px;
-}
-
-.repair_li {
-  font: normal 13px/27px "Nunito Sans", arial, sans-serif;
-  color: #959595;
-}
-
-.repair_square {
+.repair_square,
+.blocksquare {
   font: normal 18px/25px "Yeseva One", "Times New Roman", serif;
   width: 228px;
   height: 54px;
   color: #ffffff;
-  background: #e3b873;
+  background-color: #e3b873;
   text-transform: uppercase;
-  text-align: center;
   padding: 17px 18px;
-}
-.conteinerStyle {
+  border-right: 1px solid #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.styleInterior_ul {
+
+.groop1 {
+  margin-top: -41px;
+  width: 354px;
+  margin-right: 43px;
+}
+.groop2 {
+  margin-top: -113px;
+  width: 354px;
+}
+.conteinerStyle_foto {
+  display: flex;
+}
+
+.conteinerStyle_foto img {
+  margin-bottom: 39px;
+}
+
+.comment1 {
   display: flex;
   flex-direction: column;
+  width: 376px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.square_comment1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 293px;
+}
+.fotopeople {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.foto1 {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.fio {
+  font: normal 18px/23px "Yeseva One", "Times New Roman", serif;
+  font-family: Yeseva One;
+  color: #181818;
 }
