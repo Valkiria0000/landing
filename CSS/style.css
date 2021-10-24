@@ -18,7 +18,10 @@ body * {
 .tell {
   color: #e3b873;
 }
-
+.hr {
+  border: 1px solid #e3b873;
+  width: 55px;
+}
 /*кнопки */
 
 .button {
@@ -41,6 +44,7 @@ body * {
   margin-right: 49px;
   margin-top: 39px;
 }
+
 .buttomForm {
   font-size: 13px;
   line-height: 27px;
@@ -48,7 +52,9 @@ body * {
   height: 51px;
   background: rgba(54, 54, 54, 0.5);
 }
-
+.buttomForm2 {
+  margin-top: 40px;
+}
 .button:hover {
   background: #e3b873;
 }
@@ -76,6 +82,15 @@ body * {
   flex-direction: column;
   margin-top: 102px;
   padding-left: 49px;
+}
+.form3 {
+  width: 883px;
+  height: 445px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .label {
@@ -110,7 +125,18 @@ body * {
   height: 40px;
   background-color: #131313;
 }
+.form3line {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
 
+.inputForm3 {
+  width: 231px;
+}
+.inputForm4 {
+  width: 516px;
+}
 .input:hover {
   border: 1px solid rgba(54, 54, 54, 0.5);
 }
@@ -130,7 +156,9 @@ body * {
 .checkboxForm2 {
   padding-top: 16px;
 }
-
+.checkboxForm3 {
+  padding-top: 40px;
+}
 .box {
   display: inline-flex;
   width: 18px;
@@ -151,14 +179,16 @@ body * {
 
 /*навигации*/
 
-.header-nav {
+.header-nav,
+.footer-nav {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
 
 .header-nav_li,
-.section2Nav_li {
+.section2Nav_li,
+.footer-nav_li {
   margin-right: 47px;
 }
 
@@ -166,8 +196,20 @@ body * {
   text-decoration: none;
   color: #ffffff;
 }
+.footer-nav_li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.section2Nav_li a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 .header-nav_li a:hover {
+  color: #e3b873;
+}
+
+.footer-nav_li a:hover {
   color: #e3b873;
 }
 .section2Nav {
@@ -250,6 +292,7 @@ body * {
   text-align: center;
   color: #ffffff;
   padding-bottom: 13px;
+  text-transform: uppercase;
 }
 
 .title3_2 {
@@ -257,6 +300,10 @@ body * {
   color: #181818;
 }
 
+.titlesection9 {
+  color: #e3b873;
+  padding-top: 300px;
+}
 .titleform,
 .pig {
   font: normal 18px/26px "Nunito Sans", arial, sans-serif;
@@ -393,10 +440,17 @@ body * {
   font: normal 14px/19px "Nunito Sans", arial, sans-serif;
   color: #363636;
 }
+
+.connection {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
 /*секции*/
 
 .header,
-.section2 {
+.section2,
+.footer {
   background-color: #131313;
 }
 
@@ -422,6 +476,19 @@ body * {
   height: 864px;
   background-image: url(..//images/styleimg.png);
 }
+.section7 {
+  padding-top: 110px;
+}
+
+.section8 {
+  margin-top: -222px;
+}
+.section9 {
+  height: 953px;
+  margin-top: -222px;
+  background-image: url(..//images/image\ 7.2.png);
+}
+
 /*контейнеры*/
 
 .Conteiner {
@@ -456,11 +523,17 @@ body * {
   display: flex;
   justify-content: space-between;
 }
+.Conteiner8,
+.Conteiner9 {
+  max-width: 883px;
+}
+
 /*затемнение картинки*/
 
 .Conteiner1,
 .conteinerStyle,
-.wrapperFotoSection3 {
+.wrapperFotoSection3,
+.Conteiner9 {
   position: relative;
   z-index: 1;
 }
@@ -489,13 +562,36 @@ body * {
   height: 864px;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
-.section7 {
-  padding-top: 110px;
+.citybild {
+  background-image: url(/images/citybild.png);
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: 1;
 }
+.citybild::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.section9 {
+  position: relative;
+  z-index: 1;
+}
+.section9::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 953px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 /*контент*/
 
-.headerContent {
+.headerContent,
+.footerContent {
   font: normal 11px/15px "Nunito Sans", arial, sans-serif;
   text-transform: uppercase;
   display: flex;
@@ -503,7 +599,9 @@ body * {
   align-items: center;
   height: 83px;
 }
-
+.footerheight {
+  height: 133px;
+}
 .section2_content_block1 {
   display: flex;
   flex-direction: column;
@@ -606,4 +704,12 @@ body * {
   font: normal 18px/23px "Yeseva One", "Times New Roman", serif;
   font-family: Yeseva One;
   color: #181818;
+}
+
+.bild {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.connection a {
+  margin-right: 15px;
 }
