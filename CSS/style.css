@@ -20,7 +20,8 @@ body * {
 }
 /*кнопки */
 
-.button {
+.button,
+.button2 {
   font: normal 11px/15px "Nunito Sans", arial, sans-serif;
   background: transparent;
   border: 1px solid #ffffff;
@@ -33,9 +34,12 @@ body * {
   font-style: italic;
   text-align: center;
   cursor: pointer;
+  width: 220px;
+  height: 51px;
+  margin-right: 20px;
 }
 
-.button2 {
+.button3 {
   align-self: flex-end;
   margin-right: 49px;
   margin-top: 39px;
@@ -52,13 +56,7 @@ body * {
   margin-top: 40px;
 }
 .button:hover {
-  background: #e3b873;
-}
-
-.Conteiner1 > button {
-  width: 220px;
-  height: 51px;
-  margin-right: 20px;
+  background-color: #e3b873;
 }
 
 /*формы*/
@@ -610,6 +608,9 @@ body * {
 
 .contentBlock {
   width: 40%;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .repair,
@@ -701,16 +702,96 @@ body * {
   margin-right: 15px;
 }
 
-.img,
 .videoPng,
 .imgsection4,
 .imgstyle,
-.repeir_image {
+.repeir_image,
+.image2 {
   max-width: 100%;
   height: auto;
 }
 
 @media screen and (max-width: 1300px) {
-}
-@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  /*
+  .logo,
+  .tell,
+  .paragraph,
+  .title {
+    padding: 18px;
+  }*/
+
+  .section1 {
+    background-image: url(../images/imagemob1.png);
+    background-size: cover;
+    padding-top: 85px;
+  }
+
+  .title {
+    font-size: 23px;
+    line-height: 132.83%;
+    /* or 31px */
+  }
+  .paragraph {
+    font-size: 14px;
+    line-height: 135.84%;
+    display: block;
+    /* or 19px */
+  }
+  .headerContent button {
+    display: none;
+  }
+
+  .button2 {
+    width: 90%;
+    margin-top: 18px;
+    margin-left: 18px;
+  }
+
+  .button2:hover {
+    background-color: #e3b873;
+  }
+  .section1 {
+    height: 476px;
+  }
+  .section1::before {
+    height: 476px;
+  }
+  .section2Nav {
+    display: none;
+  }
+  .section2_content {
+    flex-direction: column;
+  }
+
+  .slader {
+    display: none;
+  }
+  .title2 {
+    font-size: 22px;
+    line-height: 138.6%;
+    /* or 30px */
+    text-align: center;
+  }
+  .section2paragraph {
+    font-size: 11px;
+    line-height: 158.48%;
+    /* or 17px */
+    margin: 0;
+    text-align: center;
+  }
+
+  .title3 {
+    font-size: 14px;
+    line-height: 138.6%;
+    /* identical to box height, or 19px */
+  }
+
+  .parameters {
+    font-size: 11px;
+    line-height: 18px;
+    padding: 0;
+  }
 }
