@@ -754,10 +754,6 @@ body * {
     height: 476px;
   }
 
-  .section2_content {
-    flex-direction: column;
-  }
-
   .title2 {
     font-size: 22px;
     line-height: 138.6%;
@@ -817,16 +813,19 @@ body * {
   }
   .header-nav,
   .section5,
-  .slader .styleInterior_ul,
+  .slader,
+  .styleInterior_ul,
   .footer,
   .section2Nav,
   .imgsec2,
   .conteinerStyle_foto,
-  .section7 {
+  .section7,
+  .text_none {
     display: none;
   }
   .styleInterior {
     background-color: #ffffff;
+    margin-top: -80px;
   }
 
   .conteinerStyle {
@@ -850,7 +849,9 @@ body * {
     width: 90%;
     background-color: #131313;
   }
-  .form {
+  .form,
+  .section2_content,
+  .form3line {
     flex-direction: column;
   }
 
@@ -862,5 +863,9 @@ body * {
 
   .checkbox {
     order: 3;
+  }
+
+  .form3 {
+    align-items: flex-start;
   }
 }
