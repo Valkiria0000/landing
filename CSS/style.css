@@ -66,16 +66,15 @@ body * {
 }
 
 .form2 {
-  width: 506px;
-  height: 509px;
+  width: 509px;
+  padding: 50px;
   background-color: #131313;
   display: flex;
   flex-direction: column;
   margin-top: 102px;
-  padding-left: 49px;
 }
 .form3 {
-  width: auto;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -124,6 +123,7 @@ body * {
 .inputForm3 {
   width: 231px;
 }
+
 .inputForm4 {
   width: 516px;
 }
@@ -292,7 +292,6 @@ body * {
 
 .titlesection9 {
   color: #e3b873;
-  padding-top: 300px;
 }
 .titleform,
 .pig {
@@ -518,6 +517,9 @@ body * {
   max-width: 883px;
 }
 
+.Conteiner9 {
+  padding-top: 300px;
+}
 /*затемнение картинки*/
 
 .Conteiner1,
@@ -773,10 +775,13 @@ body * {
 
   .title3_1 {
     font-size: 22px;
-    line-height: 138.6%;
-    /* or 30px */
+    line-height: 138.6%; /* or 30px */
+    align-self: center;
+    margin: 0;
   }
-
+  .titleStyle {
+    padding-top: 150px;
+  }
   .parameters {
     font-size: 11px;
     line-height: 18px;
@@ -832,17 +837,17 @@ body * {
   .styleInterior {
     background-color: #ffffff;
     margin-top: -132px;
-  }
-
-  .conteinerStyle {
-    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section6 {
     background-repeat: no-repeat;
-    height: 500px;
+    height: 350px;
     margin: 0 20px;
     background-image: url(..//images/image\ 5.3.png);
+    position: relative;
+    z-index: 3;
   }
 
   .section6::before {
@@ -854,7 +859,7 @@ body * {
   }
 
   .input {
-    width: 90%;
+    width: 100%;
     background-color: #131313;
   }
 
@@ -903,7 +908,7 @@ body * {
   }
 
   .label {
-    padding-top: 63px;
+    padding-top: 40px;
     margin: 0;
   }
 
@@ -915,11 +920,59 @@ body * {
     padding: 0;
   }
 
+  .form2 {
+    padding-top: 173px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
   .section9 {
+    background-color: #131313;
     background-image: none;
   }
 
   .section9::before {
     display: none;
+  }
+
+  .buttomForm2 {
+    order: 3;
+  }
+
+  .form3line {
+    width: 100%;
+  }
+
+  .labelForm2 {
+    width: 100%;
+  }
+
+  .checkboxForm3 {
+    padding: 0;
+  }
+
+  .titlesection9 {
+    font-size: 18px;
+    line-height: 138.6%;
+    /* or 25px */
+    padding-top: 30px;
+  }
+
+  .Conteiner9 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 230px;
+  }
+
+  .t {
+    order: 2;
+  }
+
+  .connection {
+    order: 3;
+  }
+
+  .section9 {
+    height: auto;
   }
 }
