@@ -1,6 +1,5 @@
 body {
   margin: 0 auto;
-  /*font-family: "Nunito Sans", arial, sans-serif;*/
 }
 
 body * {
@@ -71,12 +70,10 @@ body * {
   background-color: #131313;
   display: flex;
   flex-direction: column;
-  margin-top: 102px;
 }
+
 .form3 {
   width: 100%;
-  margin: 0 auto;
-  display: flex;
   align-items: center;
   position: relative;
   z-index: 2;
@@ -127,6 +124,7 @@ body * {
 .inputForm4 {
   width: 516px;
 }
+
 .input:hover {
   border: 1px solid rgba(54, 54, 54, 0.5);
 }
@@ -143,12 +141,15 @@ body * {
 .input_checkbox {
   display: none;
 }
+
 .checkboxForm2 {
   padding-top: 16px;
 }
+
 .checkboxForm3 {
   padding-top: 40px;
 }
+
 .box {
   display: inline-flex;
   width: 18px;
@@ -266,14 +267,13 @@ body * {
   line-height: 37px;
   letter-spacing: -0.07em;
   color: #e3b873;
-  margin: 0;
 }
 
 .title3 {
   font-size: 18px;
   line-height: 25px;
-  color: #e3b873;
   padding-bottom: 9px;
+  color: #e3b873;
 }
 
 .title3_1 {
@@ -294,6 +294,7 @@ body * {
   color: #e3b873;
   padding-top: 30px;
 }
+
 .titleform,
 .pig {
   font: normal 18px/26px "Nunito Sans", arial, sans-serif;
@@ -332,13 +333,14 @@ body * {
 }
 
 .section3paragraph {
-  font: normal 18px/37px "Nunito Sans", arial, sans-serif;
+  font-size: 18px;
+  line-height: 37px;
   text-align: center;
   color: #363636;
-  text-align: center;
   margin: 30px auto;
   margin-bottom: 91px;
 }
+
 .section7paragraph {
   font-size: 18px;
   line-height: 29px;
@@ -393,9 +395,9 @@ body * {
   top: 35%;
   left: 45%;
   width: 15%;
-
   cursor: pointer;
 }
+
 .step {
   display: flex;
   align-items: center;
@@ -425,6 +427,7 @@ body * {
   flex-direction: row;
   align-items: center;
 }
+
 .icons_text {
   font: normal 14px/19px "Nunito Sans", arial, sans-serif;
   color: #363636;
@@ -465,6 +468,7 @@ body * {
   height: 864px;
   background-image: url(..//images/styleimg.png);
 }
+
 .section7 {
   padding-top: 110px;
 }
@@ -472,6 +476,7 @@ body * {
 .section8 {
   margin-top: -222px;
 }
+
 .section9 {
   height: 953px;
   margin-top: -300px;
@@ -555,6 +560,7 @@ body * {
   height: 864px;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
 .citybild {
   background-image: url(/images/citybild.png);
   width: 100%;
@@ -562,6 +568,7 @@ body * {
   position: relative;
   z-index: 1;
 }
+
 .citybild::before {
   content: "";
   position: absolute;
@@ -569,10 +576,12 @@ body * {
   height: 400px;
   background-color: rgba(255, 255, 255, 0.9);
 }
+
 .section9 {
   position: relative;
   z-index: 1;
 }
+
 .section9::before {
   content: "";
   position: absolute;
@@ -592,10 +601,13 @@ body * {
   align-items: center;
   height: 83px;
 }
+
 .footerheight {
   height: 133px;
 }
-.section2_content_block1 {
+
+.section2_content_block1,
+.groop {
   display: flex;
   flex-direction: column;
 }
@@ -604,6 +616,7 @@ body * {
   display: flex;
   justify-content: flex-start;
   padding-top: 42px;
+  width: 90%;
 }
 
 .contentBlock {
@@ -651,11 +664,6 @@ body * {
   justify-content: center;
 }
 
-.groop {
-  display: flex;
-  flex-direction: column;
-}
-
 .groop1 {
   margin: -41px 43px;
   justify-content: space-between;
@@ -663,6 +671,7 @@ body * {
 .groop2 {
   margin-top: -113px;
 }
+
 .conteinerStyle_foto {
   display: flex;
 }
@@ -674,7 +683,6 @@ body * {
 .comment1 {
   display: flex;
   flex-direction: column;
-
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
 
@@ -688,9 +696,10 @@ body * {
   border-radius: 50%;
   margin-right: 20px;
 }
+
 .fio {
   font: normal 18px/23px "Yeseva One", "Times New Roman", serif;
-  font-family: Yeseva One;
+  font-family: "Yeseva One";
   color: #181818;
 }
 
@@ -711,7 +720,9 @@ body * {
   max-width: 100%;
   height: auto;
 }
-.sladernone {
+
+.sladernone,
+.none {
   display: none;
 }
 
@@ -780,9 +791,11 @@ body * {
     align-self: center;
     margin: 0;
   }
+
   .titleStyle {
     padding-top: 150px;
   }
+
   .parameters {
     font-size: 11px;
     line-height: 18px;
@@ -790,12 +803,14 @@ body * {
   }
 
   .sladernone,
-  .repair {
+  .repair,
+  .none {
     display: block;
   }
 
   .Conteiner3 {
     background-color: #131313;
+    width: 100%;
   }
 
   .section3paragraph {
@@ -820,8 +835,11 @@ body * {
 
   .repair_ConteinerBlock {
     margin-top: -150px;
+    width: 250px;
   }
-
+  .Conteiner4 {
+    align-items: center;
+  }
   .header-nav,
   .section5,
   .slader,
@@ -831,7 +849,8 @@ body * {
   .imgsec2,
   .conteinerStyle_foto,
   .section7,
-  .text_none {
+  .text_none,
+  .section6 {
     display: none;
   }
 
@@ -842,21 +861,17 @@ body * {
     margin-right: auto;
   }
 
-  .section6 {
-    background-repeat: no-repeat;
-    height: 350px;
-    margin: 0 20px;
-    background-image: url(..//images/image\ 5.3.png);
+  .none {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 3;
+    align-items: center;
   }
 
-  .section6::before {
-    display: none;
-  }
-
-  .Conteiner4 {
-    padding-bottom: 100px;
+  .sladersection6 {
+    width: 80%;
   }
 
   .input {
@@ -865,7 +880,6 @@ body * {
   }
 
   .form,
-  .section2_content,
   .form3line {
     flex-direction: column;
   }
@@ -877,10 +891,6 @@ body * {
   }
   .buttomForm {
     width: 330px;
-  }
-
-  .checkbox {
-    order: 3;
   }
 
   .form3 {
@@ -917,7 +927,12 @@ body * {
     margin: 40px 0;
   }
 
-  .Conteiner8 {
+  .section8 {
+    margin-top: -130px;
+  }
+
+  .Conteiner8,
+  .checkboxForm3 {
     padding: 0;
   }
 
@@ -936,20 +951,15 @@ body * {
     display: none;
   }
 
-  .buttomForm2 {
+  .buttomForm2,
+  .connection {
     order: 3;
   }
 
-  .form3line {
+  .form3line,
+  .labelForm2,
+  .buttomForm2 {
     width: 100%;
-  }
-
-  .labelForm2 {
-    width: 100%;
-  }
-
-  .checkboxForm3 {
-    padding: 0;
   }
 
   .titlesection9 {
@@ -965,11 +975,23 @@ body * {
     flex-direction: column;
   }
 
-  .connection {
-    order: 3;
+  .section2_content {
+    justify-content: center;
   }
-
   .section9 {
     height: auto;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .section3,
+  .section4,
+  .section5,
+  .section6,
+  .section7,
+  .section8,
+  .section9,
+  .footer {
+    display: none;
   }
 }
