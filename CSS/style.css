@@ -422,7 +422,8 @@ body * {
   margin-right: 14px;
 }
 
-.pig {
+.pig,
+.fotopeople {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -499,7 +500,8 @@ body * {
 }
 
 .Conteiner4,
-.styleInterior {
+.styleInterior,
+.repair_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -513,7 +515,8 @@ body * {
 }
 .conteinerStyle,
 .section2_content,
-.comment {
+.comment,
+.repair {
   display: flex;
   justify-content: space-between;
 }
@@ -531,7 +534,8 @@ body * {
 .Conteiner1,
 .conteinerStyle,
 .wrapperFotoSection3,
-.Conteiner9 {
+.Conteiner9,
+.section9 {
   position: relative;
   z-index: 1;
 }
@@ -577,11 +581,6 @@ body * {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.section9 {
-  position: relative;
-  z-index: 1;
-}
-
 .section9::before {
   content: "";
   position: absolute;
@@ -623,16 +622,6 @@ body * {
   width: 40%;
 }
 
-.repair {
-  display: flex;
-  justify-content: space-between;
-}
-
-.repair_wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .repearTitle {
   font: normal 18px/25px "Yeseva One", "Times New Roman", serif;
   color: #363636;
@@ -684,12 +673,6 @@ body * {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
-}
-
-.fotopeople {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .foto1 {
