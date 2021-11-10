@@ -19,8 +19,7 @@ body * {
 .button,
 .button2 {
   font: normal 11px/15px "Nunito Sans", arial, sans-serif;
-  background: transparent;
-  border: 1px solid #ffffff;
+  background-color: #e3b873;
   color: #ffffff;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
@@ -32,6 +31,7 @@ body * {
   cursor: pointer;
   width: 220px;
   height: 51px;
+  border: none;
   margin-right: 20px;
 }
 
@@ -39,6 +39,7 @@ body * {
   align-self: flex-end;
   margin-right: 49px;
   margin-top: 39px;
+  background-color: #e3b873;
 }
 
 .buttomForm {
@@ -46,13 +47,20 @@ body * {
   line-height: 27px;
   width: 200px;
   height: 51px;
-  background: rgba(54, 54, 54, 0.5);
+  background-color: #e3b873;
 }
+
 .buttomForm2 {
   margin-top: 40px;
 }
+
 .button:hover {
-  background-color: #e3b873;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.buttomForm:hover {
+  background-color: rgba(54, 54, 54, 0.5);
 }
 
 /*формы*/
@@ -354,6 +362,7 @@ body * {
   line-height: 180%;
   /* or 23px */
   color: #959595;
+  padding: 10px 31px 60px 0;
 }
 /*картинки и иконки*/
 
@@ -650,13 +659,18 @@ body * {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.shadow {
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
 }
 
 .groop1 {
   margin: -41px 43px;
   justify-content: space-between;
 }
+
 .groop2 {
   margin-top: -113px;
 }
