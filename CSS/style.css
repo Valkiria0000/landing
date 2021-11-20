@@ -390,13 +390,15 @@ body * {
   margin: 12px 3px;
 }
 
-.slader {
-  padding-top: 45px;
-  cursor: pointer;
-}
-
 .slader_img {
   margin-right: 30px;
+  width: 50px;
+}
+
+.slade-icon {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
 }
 
 .videoImg {
@@ -973,8 +975,10 @@ body * {
   }
 
   .section2_content {
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
   }
+
   .section9 {
     height: auto;
   }
