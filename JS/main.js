@@ -1,11 +1,11 @@
 let images = [{
-  url: '../images/image2.1.png', 
+  url: '..//images/image2.1.png', 
   title: 'Офисное решение - №1'
 }, {
-  url: '../images/image_2.png', 
+  url: '..//images/image_2.png', 
   title: 'Офисное решение - №2'
 }, {
-  url: '../images/image_3.png', 
+  url: '..//images/image_3.png', 
   title: 'Офисное решение - №3'
 }]
 
