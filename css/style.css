@@ -176,6 +176,10 @@ body * {
   opacity: 1;
 }
 
+.none-block {
+  display: none;
+}
+
 /*навигации*/
 
 .header-nav,
@@ -199,10 +203,6 @@ body * {
   text-decoration: none;
   color: #ffffff;
 }
-.section2Nav_li a {
-  text-decoration: none;
-  color: #ffffff;
-}
 
 .header-nav_li a:hover {
   color: #e3b873;
@@ -219,16 +219,23 @@ body * {
   margin: 0;
 }
 
-.section2Nav_li a {
-  text-decoration: none;
+.section2Nav_li {
   color: #ffffff;
   font: normal 14px/19px "Yeseva One", "Times New Roman", serif;
   text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+.section2Nav_li:hover {
+  color: #e3b873;
+
+  border-bottom: 1px solid #e3b873;
 }
 
-.section2Nav_li a:hover {
+.active-li {
   color: #e3b873;
-  padding-bottom: 10px;
+
   border-bottom: 1px solid #e3b873;
 }
 .repair_ul {
@@ -678,13 +685,13 @@ body * {
 
 .section2_content_block2 {
   display: flex;
-  justify-content: flex-start;
+
   padding-top: 42px;
   width: 90%;
 }
 
 .contentBlock {
-  width: 40%;
+  width: 50%;
 }
 
 .repearTitle {

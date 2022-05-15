@@ -1,12 +1,12 @@
 let images = [{
   url: 'images/image2.1.png', 
-  title: 'Офисное решение - №1'
+  title: 'Rostov-on-Don, Admiral'
 }, {
   url: 'images/image_2.png', 
-  title: 'Офисное решение - №2'
+  title: 'Sochi Thieves'
 }, {
   url: 'images/image_3.png', 
-  title: 'Офисное решение - №3'
+  title: 'Rostov-on-Don Patriotic'
 }]
 
 function initSlider(options) {
@@ -20,9 +20,13 @@ function initSlider(options) {
   let slideImages = document.querySelector('.slide-image');
   let slideBtns = document.querySelector('.slide-btns');
   let slideDots = document.querySelector('.slide-dots');
+  let links = document.querySelectorAll('.section2Nav_li');
+  let parametrs = document.querySelectorAll('.wpapper-block');
 
   initImages();
+  initLink();
   initBtns();
+  
 
   if (options.dots) {
         initDots();
@@ -36,44 +40,101 @@ function initSlider(options) {
      initAutoplay();
   }
 
+
   function initImages() {
      images.forEach((image, index) => {
         let imgDiv = `<div class = "img n${index} ${index === 0? "active": ""}" 
         style="background-image: url(${images[index].url});" data-index="${index}"></div>`;
-
         slideImages.innerHTML += imgDiv;
-
      })
   }
 
+  
+  function initLink() {
+   links.forEach((link, index) => {
+      link.addEventListener('click', (event) => {
+        links.forEach((item) => {
+      if(item === event.target) {
+         item.classList.add('active-li');
+      } else {
+         item.classList.remove('active-li');
+      } 
+   }) 
+
+   parametrs.forEach((param, indexText) => {
+      if(index === indexText) {
+         param.classList.remove('none-block');  
+      } else {
+         param.classList.add('none-block'); 
+      } 
+   })   
+   moveSlider(index);
+      })
+   })
+}
+
   function initBtns() {
      slideBtns.querySelectorAll('.slide-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-           let curNumber = +slideImages.querySelector('.active').dataset.index;
+        btn.addEventListener('click', function(e) {
+          
+          let curNumber = +slideImages.querySelector('.active').dataset.index;
           let nextNumber;
+          
            if (btn.classList.contains('left')) {
               nextNumber = curNumber === 0? images.length - 1 : curNumber - 1;
               } else {
                  nextNumber = curNumber === images.length - 1? 0 : curNumber +1;
               } 
+              
               moveSlider(nextNumber);
-        });
-     });
-  }
+
+             links.forEach((link, index) => {
+               if(index === nextNumber ) {
+                  link.classList.add('active-li');
+               
+                } else {
+                  link.classList.remove('active-li');
+                }
+    
+            parametrs.forEach((param, indexText) => {
+               if(indexText === nextNumber ) {
+                   param.classList.remove('none-block');      
+               } else {
+                   param.classList.add('none-block');
+               }
+            })   
+         })
+      });  
+   })  
+}
 
 function initDots() {
   images.forEach((image, index) => {
      let dots = `<div class = "slide-dots-item n${index} ${index === 0? "active" : ""}" data-index='${index}'></div>`;
      slideDots.innerHTML += dots;
   });
-  slideDots.querySelectorAll('.slide-dots-item').forEach(dots => {
+  slideDots.querySelectorAll('.slide-dots-item').forEach((dots,indexDots) => {
      dots.addEventListener('click', function() {
-        moveSlider(this.dataset.index);
+           moveSlider(this.dataset.index);
+         links.forEach((link, index) => {
+         if(index === indexDots ) {
+            link.classList.add('active-li');
+         
+          } else {
+            link.classList.remove('active-li');
+          }
+   })
       
-     });
+      parametrs.forEach((param, indexText) => {
+         if(indexText === indexDots ) {
+             param.classList.remove('none-block');      
+         } else {
+             param.classList.add('none-block');
+         }
+      })  
+     });  
   });
 }
-
 
   function moveSlider(num) {
      slideImages.querySelector('.active').classList.remove('active');
@@ -120,7 +181,6 @@ let slideOption = {
   autoplay: false,
   autoInterval: 3000
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
   initSlider(slideOption);
