@@ -409,10 +409,6 @@ body * {
   margin-left: auto;
 }
 
-.sladernone {
-  display: none;
-}
-
 .slide-image .img {
   background-size: cover;
   background-position: center center;
@@ -690,7 +686,6 @@ body * {
 
 .section2_content_block2 {
   display: flex;
-  margin: 0 auto;
   padding-top: 42px;
   width: 90%;
 }
@@ -861,7 +856,6 @@ body * {
     padding: 0;
   }
 
-  .sladernone,
   .repair,
   .none {
     display: block;
